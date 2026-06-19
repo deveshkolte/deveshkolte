@@ -1,16 +1,29 @@
-## Hi there 👋
+# Hey, I'm Devesh 👋
 
-<!--
-**deveshkolte/deveshkolte** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+1st year CS student at NMIT Bangalore. I build things. Always working on something new.
 
-Here are some ideas to get you started:
+![Bangalore, India](https://img.shields.io/badge/Bangalore,_India-gray?style=flat&logoColor=white)
+![TypeScript · Python · C](https://img.shields.io/badge/TypeScript_·_Python_·_C-gray?style=flat)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## Projects
+
+**FareSnap** — Compare ride fares across 9 apps — Uber, Ola, Rapido and more. AI-powered surge detection. Built for Indian cities.
+`React Native`
+
+**tweet4D** — AI Twitter growth tool for builders. Drafts tweets, replies, threads with algorithm-aware scoring.
+`Next.js` · [Live →](https://tweet4-d.vercel.app)
+
+**Prompt Enhancer** — Chrome extension that rewrites rough prompts into high-quality ones before you send them to ChatGPT or Claude.
+`Chrome Extension`
+
+---
+
+## Currently learning
+`DSA in C` · `n8n automation` · `Open source contributions`
+
+---
+
+## Find me
+[LinkedIn](https://www.linkedin.com/in/deveshkolte/) · [X @devesh13_](https://x.com/devesh13_)
