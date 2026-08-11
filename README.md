@@ -1,6 +1,6 @@
 # Hey, I'm Devesh 👋
 
-1st year CS student at NMIT Bangalore. I build things. Always working on something new.
+2nd year CS student at NMIT Bangalore. I build things. Always working on something new.
 
 ![Bangalore, India](https://img.shields.io/badge/Bangalore,_India-gray?style=flat&logoColor=white)
 ![TypeScript · Python · C](https://img.shields.io/badge/TypeScript_·_Python_·_C-gray?style=flat)
