@@ -2,7 +2,7 @@
 
   <h2 align="center">Devesh Kolte</h2>
 
-  <!-- Animated Subtitle (Name above stays permanent, never half-erased) -->
+  <!-- Animated Subtitle -->
   <a href="https://github.com/deveshkolte">
     <img src="./typing.svg" width="640" height="30" alt="AI Systems, MCP Servers & Full-Stack Engineering" />
   </a>
@@ -70,30 +70,9 @@
 
 ---
 
-### 🖥 System & Product Previews
+### 📊 Activity & Languages
 
-<details open>
-  <summary><b>1. RAGmortem v0.2.0 — Deterministic RAG Root-Cause Debugger (CLI Output)</b></summary>
-  <br/>
-  <p align="center">
-    <a href="https://github.com/deveshkolte/RAGmortem">
-      <img src="assets/ragmortem-cli.png" width="92%" alt="RAGmortem v0.2.0 CLI Diagnosis Output" />
-    </a>
-  </p>
-</details>
-
-<br/>
-
-<details open>
-  <summary><b>2. FareSnap v1.1.1 — Multi-Modal Ride &amp; Metro Aggregator (Android APK)</b></summary>
-  <br/>
-  <p align="center">
-    <a href="https://github.com/deveshkolte/deveshkolte/releases/tag/faresnap-v1.1.1">
-      <img src="assets/faresnap/home.jpeg" width="18.5%" alt="FareSnap Home" />
-      <img src="assets/faresnap/location.jpeg" width="18.5%" alt="FareSnap Location" />
-      <img src="assets/faresnap/loading.jpeg" width="18.5%" alt="FareSnap Quote Stream" />
-      <img src="assets/faresnap/results-top.jpeg" width="18.5%" alt="FareSnap Results Top" />
-      <img src="assets/faresnap/results-more.jpeg" width="18.5%" alt="FareSnap Results More" />
-    </a>
-  </p>
-</details>
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=deveshkolte&theme=github-dark-blue&hide_border=false&border_radius=8&background=0D1117&border=30363D" height="158" alt="GitHub Streak" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=deveshkolte&theme=github_dark" height="158" alt="Top Languages by Commit" />
+</p>
