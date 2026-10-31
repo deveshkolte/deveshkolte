@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 288" width="100%" height="288" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="880" y2="288" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#0c0c10" />
+    </linearGradient>
+    <linearGradient id="topBeam" x1="0" y1="0" x2="880" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090b" stop-opacity="0" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="rowHighlight" x1="0" y1="0" x2="820" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18181b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#18181b" stop-opacity="0.28" />
+    </linearGradient>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#27272a" opacity="0.55" />
+    </pattern>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+      
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      @keyframes scanBeam {
+        0% { transform: translateX(-360px); opacity: 0.2; }
+        50% { opacity: 1; }
+        100% { transform: translateX(360px); opacity: 0.2; }
+      }
+      @keyframes blinkCursor {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes rowPulse1 {
+        0%, 100% { stroke: #27272a; }
+        5%, 24% { stroke: #10b981; }
+      }
+      @keyframes rowPulse2 {
+        0%, 100% { stroke: #27272a; }
+        30%, 49% { stroke: #10b981; }
+      }
+      @keyframes rowPulse3 {
+        0%, 100% { stroke: #27272a; }
+        55%, 74% { stroke: #10b981; }
+      }
+      @keyframes rowPulse4 {
+        0%, 100% { stroke: #27272a; }
+        80%, 98% { stroke: #10b981; }
+      }
+      .live-dot {
+        animation: pulseDot 2.2s ease-in-out infinite;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+      .beam {
+        animation: scanBeam 5.5s ease-in-out infinite alternate;
+      }
+      .cursor {
+        animation: blinkCursor 1.1s step-end infinite;
+      }
+      .card-1 { animation: rowPulse1 8s infinite; }
+      .card-2 { animation: rowPulse2 8s infinite; }
+      .card-3 { animation: rowPulse3 8s infinite; }
+      .card-4 { animation: rowPulse4 8s infinite; }
+    </style>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="0.5" y="0.5" width="879" height="287" rx="12" fill="url(#bgGrad)" stroke="#27272a" stroke-width="1" />
+  <rect x="1" y="1" width="878" height="286" rx="12" fill="url(#dotGrid)" />
+
+  <!-- Animated Top Accent Line -->
+  <rect x="80" y="0.5" width="720" height="1.5" fill="url(#topBeam)" class="beam" />
+
+  <!-- Top Telemetry Bar -->
+  <line x1="1" y1="38" x2="879" y2="38" stroke="#1f1f23" stroke-width="1" />
+  <circle cx="22" cy="19" r="4.5" fill="#27272a" />
+  <circle cx="36" cy="19" r="4.5" fill="#27272a" />
+  <circle cx="50" cy="19" r="4.5" fill="#27272a" />
+  <text x="68" y="23" fill="#71717a" font-size="11" class="mono">deveshkolte // ai-orchestration-and-systems</text>
+
+  <!-- Right Status Indicator -->
+  <rect x="708" y="10" width="144" height="19" rx="9.5" fill="#121216" stroke="#27272a" stroke-width="1" />
+  <circle cx="721" cy="19.5" r="3.5" fill="#10b981" class="live-dot" />
+  <text x="732" y="23" fill="#d4d4d8" font-size="10" font-weight="600" letter-spacing="0.4" class="mono">BENGALURU · IN</text>
+
+  <!-- Vertical Column Divider -->
+  <line x1="386" y1="52" x2="386" y2="270" stroke="#18181b" stroke-width="1" />
+
+  <!-- Left Identity Column -->
+  <text x="28" y="82" fill="#fafafa" font-size="27" font-weight="700" letter-spacing="-0.5" class="sans">DEVESH KOLTE</text>
+  <text x="28" y="105" fill="#10b981" font-size="11" font-weight="600" class="mono">AI Orchestration · RAG Systems · DevTools</text>
+  
+  <text x="28" y="135" fill="#a1a1aa" font-size="12" class="sans">Building deterministic evaluation engines, multi-agent</text>
+  <text x="28" y="153" fill="#a1a1aa" font-size="12" class="sans">orchestrators, MCP servers, and local-first software</text>
+  <text x="28" y="171" fill="#a1a1aa" font-size="12" class="sans">that ship as real packages and production systems.</text>
+
+  <!-- Terminal Prompt Box -->
+  <rect x="28" y="196" width="336" height="66" rx="8" fill="#111115" stroke="#27272a" stroke-width="1" />
+  <text x="42" y="217" fill="#71717a" font-size="10.5" class="mono">$ uvx ragmortem demo</text>
+  <text x="42" y="235" fill="#10b981" font-size="10.5" class="mono">✓ 192/192 passed · 0.19ms CPU · 0 API keys</text>
+  <text x="42" y="252" fill="#a1a1aa" font-size="10.5" class="mono">&gt; status: shipping deterministic AI</text>
+  <rect x="275" y="242" width="6" height="11" fill="#10b981" class="cursor" />
+
+  <!-- Right Column: Animated System Stack -->
+  <text x="406" y="63" fill="#71717a" font-size="10" font-weight="600" letter-spacing="0.8" class="mono">ACTIVE SYSTEMS &amp; SHIPPED ARTIFACTS</text>
+
+  <!-- Row 1: RAGmortem -->
+  <rect x="406" y="73" width="446" height="44" rx="7" fill="url(#rowHighlight)" stroke="#27272a" stroke-width="1" class="card-1" />
+  <text x="420" y="92" fill="#10b981" font-size="11" font-weight="700" class="mono">01</text>
+  <text x="444" y="92" fill="#fafafa" font-size="12.5" font-weight="600" class="sans">RAGmortem</text>
+  <text x="530" y="92" fill="#71717a" font-size="10.5" class="mono">PyPI: ragmortem</text>
+  <rect x="752" y="79" width="88" height="18" rx="4" fill="#052e16" stroke="#065f46" stroke-width="0.8" />
+  <text x="762" y="91" fill="#34d399" font-size="9.5" font-weight="600" class="mono">0.19ms CPU</text>
+  <text x="444" y="108" fill="#a1a1aa" font-size="10.8" class="sans">Deterministic RAG root-cause debugger · 100% SQuAD v1.1 attribution</text>
+
+  <!-- Row 2: ColdForge -->
+  <rect x="406" y="125" width="446" height="44" rx="7" fill="url(#rowHighlight)" stroke="#27272a" stroke-width="1" class="card-2" />
+  <text x="420" y="144" fill="#10b981" font-size="11" font-weight="700" class="mono">02</text>
+  <text x="444" y="144" fill="#fafafa" font-size="12.5" font-weight="600" class="sans">ColdForge</text>
+  <text x="520" y="144" fill="#71717a" font-size="10.5" class="mono">Node.js v24 · SQLite WAL</text>
+  <rect x="752" y="131" width="88" height="18" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+  <text x="759" y="143" fill="#e4e4e7" font-size="9.5" font-weight="600" class="mono">83% Verified</text>
+  <text x="444" y="160" fill="#a1a1aa" font-size="10.8" class="sans">4-agent B2B recon, 5-tier provenance &amp; wire-level DKIM/SMTP engine</text>
+
+  <!-- Row 3: Unscrape SDK -->
+  <rect x="406" y="177" width="446" height="44" rx="7" fill="url(#rowHighlight)" stroke="#27272a" stroke-width="1" class="card-3" />
+  <text x="420" y="196" fill="#10b981" font-size="11" font-weight="700" class="mono">03</text>
+  <text x="444" y="196" fill="#fafafa" font-size="12.5" font-weight="600" class="sans">Unscrape SDK</text>
+  <text x="542" y="196" fill="#71717a" font-size="10.5" class="mono">TypeScript · MCP Server</text>
+  <rect x="752" y="183" width="88" height="18" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+  <text x="764" y="195" fill="#e4e4e7" font-size="9.5" font-weight="600" class="mono">50/50 Live</text>
+  <text x="444" y="212" fill="#a1a1aa" font-size="10.8" class="sans">JSON-RPC 2.0 MCP server, XHR interception &amp; dark-store GPS spoofing</text>
+
+  <!-- Row 4: FareSnap -->
+  <rect x="406" y="229" width="446" height="44" rx="7" fill="url(#rowHighlight)" stroke="#27272a" stroke-width="1" class="card-4" />
+  <text x="420" y="248" fill="#10b981" font-size="11" font-weight="700" class="mono">04</text>
+  <text x="444" y="248" fill="#fafafa" font-size="12.5" font-weight="600" class="sans">FareSnap</text>
+  <text x="514" y="248" fill="#71717a" font-size="10.5" class="mono">React Native · ONDC Beckn</text>
+  <rect x="752" y="235" width="88" height="18" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="0.8" />
+  <text x="770" y="247" fill="#e4e4e7" font-size="9.5" font-weight="600" class="mono">9 Cities</text>
+  <text x="444" y="264" fill="#a1a1aa" font-size="10.8" class="sans">Multi-modal Metro + Auto split routing, Supabase surge &amp; rain radar</text>
+</svg>

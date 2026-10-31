@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 92" width="100%" height="92" fill="none">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+      @keyframes barPulse {
+        0%, 100% { opacity: 0.95; }
+        50% { opacity: 0.45; }
+      }
+      .bar-anim {
+        animation: barPulse 2.8s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="879" height="91" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1" />
+
+  <!-- Dividers -->
+  <line x1="220" y1="14" x2="220" y2="78" stroke="#1f1f23" stroke-width="1" />
+  <line x1="440" y1="14" x2="440" y2="78" stroke="#1f1f23" stroke-width="1" />
+  <line x1="660" y1="14" x2="660" y2="78" stroke="#1f1f23" stroke-width="1" />
+
+  <!-- Col 1 -->
+  <text x="22" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">0.19 ms</text>
+  <text x="116" y="34" fill="#10b981" font-size="10.5" font-weight="600" class="mono">CPU-ONLY</text>
+  <text x="22" y="54" fill="#a1a1aa" font-size="11" class="sans">RAG Failure Attribution Latency</text>
+  <line x1="22" y1="70" x2="198" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
+  <line x1="22" y1="70" x2="198" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+
+  <!-- Col 2 -->
+  <text x="242" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">50 / 50</text>
+  <text x="336" y="34" fill="#10b981" font-size="10.5" font-weight="600" class="mono">VERIFIED</text>
+  <text x="242" y="54" fill="#a1a1aa" font-size="11" class="sans">Live Extractors &amp; MCP Server</text>
+  <line x1="242" y1="70" x2="418" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
+  <line x1="242" y1="70" x2="418" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+
+  <!-- Col 3 -->
+  <text x="462" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">37% → 83%</text>
+  <text x="462" y="54" fill="#a1a1aa" font-size="11" class="sans">B2B Contact Resolution (N=100)</text>
+  <line x1="462" y1="70" x2="638" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
+  <line x1="462" y1="70" x2="608" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+
+  <!-- Col 4 -->
+  <text x="682" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">AIR 5</text>
+  <text x="752" y="34" fill="#10b981" font-size="10.5" font-weight="600" class="mono">IIT DELHI</text>
+  <text x="682" y="54" fill="#a1a1aa" font-size="11" class="sans">Pitch Arena National Finals</text>
+  <line x1="682" y1="70" x2="858" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
+  <line x1="682" y1="70" x2="842" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+</svg>
