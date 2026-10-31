@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 148" width="100%" height="148" fill="none">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+      @keyframes pulseBorder {
+        0%, 100% { stroke: #27272a; }
+        50% { stroke: #10b981; }
+      }
+      .frame { animation: pulseBorder 5s ease-in-out 3.6s infinite; }
+    </style>
+  </defs>
+  <rect x="0.5" y="0.5" width="429" height="147" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1.2" class="frame" />
+
+  <text x="22" y="32" fill="#fafafa" font-size="16" font-weight="700" class="sans">FareSnap</text>
+  <rect x="314" y="17" width="94" height="20" rx="5" fill="#052e16" stroke="#065f46" stroke-width="0.9" />
+  <text x="326" y="30.5" fill="#34d399" font-size="10" font-weight="600" class="mono">9 CITIES</text>
+
+  <text x="22" y="55" fill="#a1a1aa" font-size="11.5" class="sans">Multi-modal ride &amp; Metro aggregator across 9 apps with</text>
+  <text x="22" y="72" fill="#a1a1aa" font-size="11.5" class="sans">Supabase surge pooling and 60-min rain-radar forecasting.</text>
+
+  <!-- Animated Split Route Telemetry Strip -->
+  <rect x="22" y="88" width="386" height="24" rx="5" fill="#111116" stroke="#1f1f25" stroke-width="1" />
+  <text x="32" y="104" fill="#71717a" font-size="9.5" class="mono">Split-Route Engine</text>
+  <path id="routePath" d="M 156 100 L 296 100" stroke="#1f1f25" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="156" y1="100" x2="296" y2="100" stroke="#065f46" stroke-width="2" stroke-dasharray="4 4" />
+  <circle cx="156" cy="100" r="3.5" fill="#10b981" />
+  <circle cx="226" cy="100" r="3.5" fill="#34d399" />
+  <circle cx="296" cy="100" r="3.5" fill="#10b981" />
+  <circle r="4" fill="#6ee7b7">
+    <animateMotion dur="2.2s" repeatCount="indefinite" path="M 156 100 L 296 100" />
+  </circle>
+  <text x="312" y="104" fill="#34d399" font-size="9.5" font-weight="600" class="mono">METRO + AUTO</text>
+
+  <text x="22" y="132" fill="#71717a" font-size="10.2" class="mono">React Native · Expo · ONDC Beckn · Supabase · OSRM · Groq</text>
+</svg>
