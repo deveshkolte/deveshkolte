@@ -1,49 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 92" width="100%" height="92" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 204" width="100%" height="204" fill="none">
   <defs>
     <style>
       .sans { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
       .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
-      @keyframes barPulse {
+
+      /* Animated sequential terminal trace reveal */
+      @keyframes line1 { 0%, 5% { opacity: 0; } 10%, 92% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes line2 { 0%, 16% { opacity: 0; } 22%, 92% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes line3 { 0%, 28% { opacity: 0; } 34%, 92% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes line4 { 0%, 40% { opacity: 0; } 46%, 92% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes line5 { 0%, 52% { opacity: 0; } 58%, 92% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes line6 { 0%, 64% { opacity: 0; } 70%, 92% { opacity: 1; } 98%, 100% { opacity: 0; } }
+
+      @keyframes waveDraw {
+        0% { stroke-dashoffset: 220; }
+        50%, 100% { stroke-dashoffset: 0; }
+      }
+      @keyframes ringPulse {
         0%, 100% { opacity: 0.95; }
         50% { opacity: 0.45; }
       }
-      .bar-anim {
-        animation: barPulse 2.8s ease-in-out infinite;
+
+      .t1 { animation: line1 9s infinite; }
+      .t2 { animation: line2 9s infinite; }
+      .t3 { animation: line3 9s infinite; }
+      .t4 { animation: line4 9s infinite; }
+      .t5 { animation: line5 9s infinite; }
+      .t6 { animation: line6 9s infinite; }
+      .wave {
+        stroke-dasharray: 220;
+        animation: waveDraw 3.8s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+      }
+      .pulse {
+        animation: ringPulse 2.6s ease-in-out infinite;
       }
     </style>
   </defs>
 
-  <rect x="0.5" y="0.5" width="879" height="91" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1" />
+  <!-- ================= LEFT PANE: LIVE ANIMATED TERMINAL REPLAY (x=0.5..510) ================= -->
+  <rect x="0.5" y="0.5" width="510" height="203" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1" />
+  <line x1="1" y1="32" x2="510" y2="32" stroke="#1f1f23" stroke-width="1" />
+  <circle cx="18" cy="16" r="4" fill="#27272a" />
+  <circle cx="30" cy="16" r="4" fill="#27272a" />
+  <circle cx="42" cy="16" r="4" fill="#27272a" />
+  <text x="58" y="20" fill="#71717a" font-size="10.2" class="mono">ragmortem — live execution trace debugger</text>
+  <rect x="424" y="8" width="74" height="16" rx="4" fill="#052e16" stroke="#065f46" stroke-width="0.8" />
+  <text x="433" y="19" fill="#34d399" font-size="9" font-weight="600" class="mono">CPU · 0.19ms</text>
 
-  <!-- Dividers -->
-  <line x1="220" y1="14" x2="220" y2="78" stroke="#1f1f23" stroke-width="1" />
-  <line x1="440" y1="14" x2="440" y2="78" stroke="#1f1f23" stroke-width="1" />
-  <line x1="660" y1="14" x2="660" y2="78" stroke="#1f1f23" stroke-width="1" />
+  <!-- Terminal Lines -->
+  <text x="20" y="54" fill="#e4e4e7" font-size="10.8" font-weight="600" class="mono">$ uvx ragmortem diagnose trace.json --mode corpus_aware</text>
 
-  <!-- Col 1 -->
-  <text x="22" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">0.19 ms</text>
-  <text x="116" y="34" fill="#10b981" font-size="10.5" font-weight="600" class="mono">CPU-ONLY</text>
-  <text x="22" y="54" fill="#a1a1aa" font-size="11" class="sans">RAG Failure Attribution Latency</text>
-  <line x1="22" y1="70" x2="198" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
-  <line x1="22" y1="70" x2="198" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+  <g class="t1">
+    <text x="20" y="78" fill="#71717a" font-size="10.5" class="mono">├─ telemetry_check</text>
+    <text x="166" y="78" fill="#10b981" font-size="10.5" font-weight="600" class="mono">[PASS]</text>
+    <text x="216" y="78" fill="#a1a1aa" font-size="10.5" class="mono">query + 3 retrieved + 8 candidates</text>
+  </g>
 
-  <!-- Col 2 -->
-  <text x="242" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">50 / 50</text>
-  <text x="336" y="34" fill="#10b981" font-size="10.5" font-weight="600" class="mono">VERIFIED</text>
-  <text x="242" y="54" fill="#a1a1aa" font-size="11" class="sans">Live Extractors &amp; MCP Server</text>
-  <line x1="242" y1="70" x2="418" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
-  <line x1="242" y1="70" x2="418" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+  <g class="t2">
+    <text x="20" y="100" fill="#71717a" font-size="10.5" class="mono">├─ score_calibrator</text>
+    <text x="166" y="100" fill="#10b981" font-size="10.5" font-weight="600" class="mono">[PASS]</text>
+    <text x="216" y="100" fill="#a1a1aa" font-size="10.5" class="mono">profile=bge · z-score calibrated</text>
+  </g>
 
-  <!-- Col 3 -->
-  <text x="462" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">37% → 83%</text>
-  <text x="462" y="54" fill="#a1a1aa" font-size="11" class="sans">B2B Contact Resolution (N=100)</text>
-  <line x1="462" y1="70" x2="638" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
-  <line x1="462" y1="70" x2="608" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+  <g class="t3">
+    <text x="20" y="122" fill="#71717a" font-size="10.5" class="mono">├─ candidate_cutoff</text>
+    <text x="166" y="122" fill="#f59e0b" font-size="10.5" font-weight="600" class="mono">[WARN]</text>
+    <text x="216" y="122" fill="#e4e4e7" font-size="10.5" class="mono">gold chunk dropped at k=3 (gap 0.04)</text>
+  </g>
 
-  <!-- Col 4 -->
-  <text x="682" y="34" fill="#fafafa" font-size="19" font-weight="700" class="mono">AIR 5</text>
-  <text x="752" y="34" fill="#10b981" font-size="10.5" font-weight="600" class="mono">IIT DELHI</text>
-  <text x="682" y="54" fill="#a1a1aa" font-size="11" class="sans">Pitch Arena National Finals</text>
-  <line x1="682" y1="70" x2="858" y2="70" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
-  <line x1="682" y1="70" x2="842" y2="70" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="bar-anim" />
+  <g class="t4">
+    <text x="20" y="144" fill="#71717a" font-size="10.5" class="mono">└─ local_nli_verify</text>
+    <text x="166" y="144" fill="#10b981" font-size="10.5" font-weight="600" class="mono">[PASS]</text>
+    <text x="216" y="144" fill="#a1a1aa" font-size="10.5" class="mono">cross-encoder entailment = 0.94</text>
+  </g>
+
+  <g class="t5">
+    <rect x="20" y="160" width="470" height="28" rx="6" fill="#111116" stroke="#27272a" stroke-width="1" />
+    <text x="32" y="178" fill="#34d399" font-size="10.5" font-weight="700" class="mono">✓ ROOT CAUSE: RANKING_MISS (Top-k Truncation · Evidence 0.95)</text>
+  </g>
+
+  <!-- ================= RIGHT PANE: 2x2 BENTO TELEMETRY CARDS (x=524..879.5) ================= -->
+  <!-- Card 1: Top-Left (524, 0.5, 172, 97) -->
+  <rect x="524" y="0.5" width="172" height="97" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1" />
+  <text x="540" y="24" fill="#71717a" font-size="9.5" font-weight="600" class="mono">SQUAD v1.1 BENCHMARK</text>
+  <text x="540" y="52" fill="#fafafa" font-size="22" font-weight="700" class="mono">100.0%</text>
+  <text x="540" y="70" fill="#a1a1aa" font-size="10.5" class="sans">50/50 Trace Attribution</text>
+  <line x1="540" y1="83" x2="680" y2="83" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
+  <line x1="540" y1="83" x2="680" y2="83" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="pulse" />
+
+  <!-- Card 2: Top-Right (707.5, 0.5, 172, 97) -->
+  <rect x="707.5" y="0.5" width="172" height="97" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1" />
+  <text x="723.5" y="24" fill="#71717a" font-size="9.5" font-weight="600" class="mono">PYTEST CI SUITE</text>
+  <text x="723.5" y="52" fill="#fafafa" font-size="22" font-weight="700" class="mono">192</text>
+  <text x="774" y="52" fill="#10b981" font-size="10.5" font-weight="600" class="mono">PASSING</text>
+  <text x="723.5" y="70" fill="#a1a1aa" font-size="10.5" class="sans">100% Offline CPU Suite</text>
+  <polyline points="723.5,85 745,82 765,84 785,78 805,81 825,75 845,77 863,72" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" class="wave" />
+
+  <!-- Card 3: Bottom-Left (524, 106.5, 172, 97) -->
+  <rect x="524" y="106.5" width="172" height="97" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1" />
+  <text x="540" y="130" fill="#71717a" font-size="9.5" font-weight="600" class="mono">UNSCRAPE MCP VAULT</text>
+  <text x="540" y="158" fill="#fafafa" font-size="22" font-weight="700" class="mono">50 / 50</text>
+  <text x="540" y="176" fill="#a1a1aa" font-size="10.5" class="sans">Live Commercial Targets</text>
+  <line x1="540" y1="189" x2="680" y2="189" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
+  <line x1="540" y1="189" x2="680" y2="189" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="pulse" />
+
+  <!-- Card 4: Bottom-Right (707.5, 106.5, 172, 97) -->
+  <rect x="707.5" y="106.5" width="172" height="97" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1" />
+  <text x="723.5" y="130" fill="#71717a" font-size="9.5" font-weight="600" class="mono">COLDFORGE BENCHMARK</text>
+  <text x="723.5" y="158" fill="#fafafa" font-size="21" font-weight="700" class="mono">37% → 83%</text>
+  <text x="723.5" y="176" fill="#a1a1aa" font-size="10.5" class="sans">Verified Contact Recon</text>
+  <line x1="723.5" y1="189" x2="863.5" y2="189" stroke="#1f1f23" stroke-width="3" stroke-linecap="round" />
+  <line x1="723.5" y1="189" x2="840" y2="189" stroke="#10b981" stroke-width="3" stroke-linecap="round" class="pulse" />
 </svg>

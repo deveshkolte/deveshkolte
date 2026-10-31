@@ -1,21 +1,18 @@
 <div align="center">
-  <img src="assets/hero.svg" width="100%" alt="Devesh Kolte — Systems & AI Engineering Console" />
+  <img src="assets/hero.svg" width="100%" alt="Devesh Kolte — Systems & AI Architecture Graph" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="assets/telemetry.svg" width="100%" alt="Engineering Benchmarks & Traction" />
+  <img src="assets/telemetry.svg" width="100%" alt="Live Execution Trace & Benchmark Telemetry" />
 </div>
 
 <br />
 
-### Engineering Focus
+### Engineering Thesis
 
-I build **deterministic AI infrastructure, multi-agent orchestrators, Model Context Protocol (MCP) servers, and local-first software**. Instead of wrapping prompt templates around black-box APIs, my work focuses on verifiable execution: isolating RAG pipeline failures on CPU without LLM judges, enforcing deterministic hallucination guards over scraped evidence, and shipping tools that run locally with zero mandatory cloud lock-in.
-
-- **Current Work:** AI & Full-Stack Product Engineer at **[DriveLink](https://www.drivelink.tech)** — building sub-50 ms Vehicle-to-Vehicle (V2V) trajectory-intent simulation and guarded AI systems (**All India Rank 5** at IIT Delhi Pitch Arena National Finals).
-- **Published Packages:** Author of **[`ragmortem`](https://pypi.org/project/ragmortem/)** on PyPI (`v0.2.0` · Apache-2.0 · 192 tests).
+I build **deterministic AI evaluation engines, multi-agent orchestrators, Model Context Protocol (MCP) servers, and local-first developer tools**. Instead of wrapping prompt templates around black-box APIs, my work focuses on verifiable execution: isolating RAG pipeline failures on CPU in sub-millisecond latency without LLM judges, enforcing deterministic hallucination guards over scraped evidence, and shipping self-contained tools with zero mandatory cloud lock-in.
 
 ---
 
