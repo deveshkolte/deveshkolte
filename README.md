@@ -2,7 +2,7 @@
 
   <!-- Animated Typing Header (DenverCoder1/readme-typing-svg) -->
   <a href="https://github.com/deveshkolte">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Devesh+Kolte+%E2%80%94+AI+Systems+%26+DevTools;Building+Deterministic+RAG+%26+MCP+Infrastructure;Shipping+Local-First+SDKs%2C+APIs+%26+Mobile+Apps" alt="Typing SVG" />
+    <img src="./typing.svg" width="680" alt="Devesh Kolte — AI Systems & DevTools" />
   </a>
 
   <p align="center">
