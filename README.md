@@ -68,12 +68,14 @@
 
 ---
 
-### 🐍 Contribution Graph
+### 📈 Activity & Breakdown
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deveshkolte/deveshkolte/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deveshkolte/deveshkolte/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/deveshkolte/deveshkolte/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
-</p>
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=deveshkolte&theme=github_dark" width="100%" alt="Profile Details" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=deveshkolte&theme=github_dark" width="32.5%" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=deveshkolte&theme=github_dark" width="32.5%" alt="Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=deveshkolte&theme=github_dark&utcOffset=5.5" width="32.5%" alt="Commit Time" />
+</div>
