@@ -1,55 +1,34 @@
-<div align="center">
-  <a href="https://github.com/deveshkolte">
-    <img src="assets/hero.svg" width="100%" alt="Devesh Kolte — AI Agent Orchestration & Developer Tools" />
-  </a>
-</div>
+<a href="https://github.com/deveshkolte">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg" />
+    <img src="assets/header-dark.svg" width="100%" alt="Devesh Kolte" />
+  </picture>
+</a>
 
 <br />
-
-<div align="center">
-  <a href="https://github.com/deveshkolte/RAGmortem">
-    <img src="assets/telemetry.svg" width="100%" alt="Live Execution Trace & Benchmark Telemetry" />
-  </a>
-</div>
-
 <br />
 
-### Selected Work
+I'm a Computer Science undergraduate in Bangalore focused on **AI evaluation infrastructure, Model Context Protocol (MCP) tooling, and full-stack engineering**. I like building local-first developer tools and shipping end-to-end web and mobile products.
 
-<div align="center">
-  <a href="https://github.com/deveshkolte/RAGmortem"><img src="assets/card-ragmortem.svg" width="49%" alt="RAGmortem" /></a>
-  <a href="https://github.com/deveshkolte/unscrape"><img src="assets/card-unscrape.svg" width="49%" alt="Unscrape SDK" /></a>
-</div>
-<div align="center">
-  <a href="#selected-work"><img src="assets/card-coldforge.svg" width="49%" alt="ColdForge" /></a>
-  <a href="#selected-work"><img src="assets/card-faresnap.svg" width="49%" alt="FareSnap" /></a>
-</div>
+### Selected Projects
 
-<br />
-
-| Project | Overview | Links |
-| :--- | :--- | :--- |
-| **[RAGmortem](https://github.com/deveshkolte/RAGmortem)** | Offline, CPU-only root-cause debugger for RAG pipelines. Isolates retrieval misses, top-*k* ranking truncation, hallucinations, and abstention failures with embedding score calibration (`MiniLM`, `OpenAI`, `BGE`) and local NLI cross-encoder verification. | [GitHub](https://github.com/deveshkolte/RAGmortem) · [SQuAD v1.1 Report](https://deveshkolte.github.io/RAGmortem/) |
-| **[Unscrape SDK](https://github.com/deveshkolte/unscrape)** | Local-first TypeScript scraping SDK and **Model Context Protocol (MCP)** JSON-RPC 2.0 server. Intercepts runtime XHR/Fetch and Next.js state payloads with hyperlocal 7-metro GPS spoofing and a stateful price-drop watchdog. | [GitHub](https://github.com/deveshkolte/unscrape) |
-| **ColdForge** | Self-hosted 4-agent B2B intelligence, 5-tier contact provenance, and outreach engine on Node.js `node:sqlite` (WAL) with deterministic hallucination guards, wire-level 2048-bit RSA `DKIM` signing, and `AES-256-GCM` credential storage. | `Private Architecture` |
-| **FareSnap** | Cross-city mobile ride & Metro aggregator for 9 Indian cities. Combines an async multi-provider quote engine (`ONDC Beckn` + 9 apps), Haversine Metro + Auto split-route calculation, Supabase surge pooling, and Open-Meteo 60-min rain-radar forecasting. | `Private Repo / APK` |
-| **[Markdown Converter](https://github.com/deveshkolte/markdown-converter)** | Document-to-Markdown ingestion platform and RAG chunking/embedding pipeline supporting 8+ document formats across a Python CLI, FastAPI REST backend, and Next.js web workspace. | [GitHub](https://github.com/deveshkolte/markdown-converter) · [Live Web App](https://markitdown-web.vercel.app) |
-
----
+- **[RAGmortem](https://github.com/deveshkolte/RAGmortem)** — Offline, CPU-only root-cause failure debugger for RAG pipelines. Isolates retrieval misses, top-*k* ranking truncation, hallucinations, and abstention failures in `0.19 ms` using calibrated embedding thresholds and local NLI cross-encoders. · [SQuAD v1.1 Benchmark](https://deveshkolte.github.io/RAGmortem/)
+- **[Unscrape](https://github.com/deveshkolte/unscrape)** — Local-first TypeScript scraping SDK and **Model Context Protocol (MCP)** JSON-RPC 2.0 server exposing 50 verified commercial extractors, XHR/Next.js state interception, 7-metro GPS spoofing, and a price-drop watchdog.
+- **[FareSnap](https://github.com/deveshkolte/deveshkolte/releases/tag/faresnap-v1.1.1)** — Cross-city Android app comparing real-time ride fares across 9 services in 9 Indian cities, featuring a Haversine Metro + Auto split-route calculator, Supabase crowdsourced surge pooling, and 60-minute rain-radar surge forecasting. · [Download APK (v1.1.1)](https://github.com/deveshkolte/deveshkolte/releases/tag/faresnap-v1.1.1)
+- **[Markdown Converter](https://github.com/deveshkolte/markdown-converter)** — Full-stack document ingestion platform converting 8+ file formats into clean Markdown with semantic chunking, local MiniLM embeddings, and ChromaDB retrieval across Next.js, FastAPI, and a Python CLI. · [Web App](https://markitdown-web.vercel.app)
 
 ### Stack
 
-```text
-Languages      :: Python (3.11+) · TypeScript · JavaScript (ES2024 / Node.js v24) · SQL · C
-AI & Agents    :: Multi-Agent Orchestration · Model Context Protocol (MCP) · RAG Diagnostics · NLI Cross-Encoders · LangChain · LlamaIndex · Ollama · Groq
-Systems & Data :: FastAPI · Node.js (node:sqlite WAL, node:tls, node:dns) · Playwright · PostgreSQL · Supabase · ChromaDB · Docker · GitHub Actions
-Web & Mobile   :: Next.js 15 · React 19 · React Native (Expo) · Tailwind CSS
-```
+<samp>Python · TypeScript · Node.js · FastAPI · Next.js · React Native (Expo) · PostgreSQL · Supabase · ChromaDB · Playwright · Docker</samp>
 
----
+<br />
+<br />
 
-<div align="center">
-  <a href="mailto:deveshkolte@gmail.com"><code>deveshkolte@gmail.com</code></a> &nbsp;&bull;&nbsp;
-  <a href="https://linkedin.com/in/deveshkolte"><code>linkedin.com/in/deveshkolte</code></a> &nbsp;&bull;&nbsp;
-  <a href="https://x.com/devesh13_"><code>x.com/devesh13_</code></a>
-</div>
+<p>
+  <samp>
+    <a href="mailto:deveshkolte@gmail.com">deveshkolte@gmail.com</a> ·
+    <a href="https://linkedin.com/in/deveshkolte">linkedin</a> ·
+    <a href="https://x.com/devesh13_">x (@devesh13_)</a>
+  </samp>
+</p>
